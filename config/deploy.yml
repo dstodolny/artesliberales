@@ -27,12 +27,10 @@ registry:
 
   # Always use an access token rather than real password when possible.
   password:
-    - SKIFF_REGISTRY_PASSWORD
-
-# Check /up against 80
-healthcheck:
-  port: 80
+    - KAMAL_REGISTRY_PASSWORD
 
 # Use a different ssh user than root
 # ssh:
 #   user: app
+builder:
+  arch: amd64
